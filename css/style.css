@@ -1,0 +1,12 @@
+/* Google font import */
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+/* Custom font for Brand name*/
+header .container span {
+  font-family: "Fredericka the Great", cursive;
+}
+/* Hide the brand logo for small screens*/
+@media screen and (max-width: 491px) {
+  header .container img {
+    display: none;
+  }
+}
