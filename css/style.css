@@ -9,15 +9,21 @@ header .container span {
   header .container img {
     display: none;
   }
+  /*Header remains fixed on top of screen as user scrolls through page*/
   header {
     position: fixed;
     top: 0;
     width: 100%;
   }
 }
-
+/*Image responsiveness*/
 @media screen and (max-width: 600px) {
   .carousel-item img {
     width: 1vw;
   }
+}
+
+footer {
+  position: relative;
+  bottom: 0;
 }
