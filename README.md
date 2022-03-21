@@ -1,5 +1,8 @@
 # pizza-chapchap
+<p float="left">
 <img src="./images/mobile-web.png">
+<img src="./images/mobile-web2.png">
+</p>
 
 ## Project Description
 A model fullstack web application that simulates activities of an order for pick-up or delivery pizza business.
