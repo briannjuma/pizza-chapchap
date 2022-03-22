@@ -194,27 +194,27 @@
                 <label for="size">Select Size</label>
                 <select class="form-control" id="pizzaSize">
                     <option value="">Choose...</option>
-                    <option value ="600">Small</option>
-                    <option value ="900">Medium</option>
-                    <option value ="1200">Large</option>
+                    <option value ="600">Small - Ksh 600</option>
+                    <option value ="900">Medium - Ksh 900</option>
+                    <option value ="1200">Large - Ksh 1200</option>
                 </select>
             </div>
             <div class="form-group col-md-4">
                 <label for="crust">Pick Crust Size</label>
                 <select class="form-control" id="pizzacrust">
                     <option value="">Choose...</option>
-                  <option value = "150">Cripsy</option>
-                  <option value = "175">Stuffed</option>
-                  <option value = "200">Gluten free</option>
+                  <option value = "150">Cripsy Ksh 150</option>
+                  <option value = "175">Stuffed Ksh 175</option>
+                  <option value = "200">Gluten free Ksh 200</option>
                 </select>
             </div>
             <div class="form-group col-md-4">
                 <label for="toppings">Pick Toppings</label>
                 <select class="form-control" id="pizzaToppings">
                     <option value="">Choose...</option>
-                  <option value = "225">Pepperoni</option>
-                  <option value = "245">Mushrooms</option>
-                  <option value = "265">Gorgonzola</option>
+                  <option value = "225">Pepperoni Ksh 225</option>
+                  <option value = "245">Mushrooms Ksh 245</option>
+                  <option value = "265">Gorgonzola Ksh 265</option>
                 </select>
             </div>
             </div>
@@ -224,7 +224,73 @@
             <br>
           </form>
         </div>
+
+        <!-- Divisions  below remain hidden and will only appear as part of the order process -->
+
+        <!-- Order total amount table-->
+        <div id="order-details">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">#Order No</th>
+                <th scope="col">Pizza Size</th>
+                <th scope="col">Toppings</th>
+                <th scope="col">Crust</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="PizzaDisplay"></tbody>
+          </table>
+          <button type="submit" id="target" class="btn btn-warning">PROCEED</button>
+        </div>
+      </div>
+      <!-- Order confirmation-->
+      <div class="container mx-">
+        <div class="row">
+          <div id="checkout" class="col-md-4 order-md-2 mb-4 select">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-muted">Oder id : <span id="track"></span>  </span>
+            </h4>
+            <div class="list-group mb-3">
+              <div class="col list-group-item d-flex justify-content-between lh-condensed">Your total Amount is <span id="total"></span> </div>
+              <div id="wouldYou">
+                <div class="col list-group-item d-flex justify-content-between lh-condensed">
+                  <p>Would you like a delivery?</p>
+                  <br>
+                  <br>
+                <div class="list-group-item d-flex justify-content-between lh-condensed">
+                  <button type="submit" id="delivery" class="btn btn-success spice">Yes</button>
+                  <br>
+                  <button type="submit" id="nodeli" class="btn btn-danger spice">No</button>
+                </div>
+              </div>
+              </div>
+               <!-- Delivery Confirmation-->
+              <div id="stayLocation" class="col list-group-item">
+                <div class="col">
+                  <p>You will incur an extra cost of 200 Ksh.</p>
+                </div>
+                <label id="stay-text" for="stay">Where do you stay?</label>
+                <br>
+                <input type="text" name="stay" id="stay">
+                <input type="button" id="withLoc" class="btn btn-warning check" value="Submit Location">
+              </div>
+            </div>
+           <div id="final" class="check">
+            <button type="submit" id="confirm" class="btn btn-success">Confirm Order</button>
+            <input type="button" onclick="reset()" value="Cancel Order" id="cansel" class="btn btn-danger">
+           </div>
+            <div id="message" class="col btn-warning">
+              <br>
+              <p> Thank you for shopping with us ! Enjoy our Pizza.</p>
+              <input type="button" class="btn btn-danger check" onclick="reset()" value="X">
+              <p id="delly"></p>
+            </div>
+      </div>
+
+
       </section>
+
     </main>
 
     <!-- Footer Section-->
