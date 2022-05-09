@@ -1,5 +1,5 @@
 # pizza-chapchap
-<p float="left">
+<p align="center">
 <img src="./images/mobile-web.png">
 <img src="./images/mobile-web2.png">
 <img src="./images/mobile-web3.png">
